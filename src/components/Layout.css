@@ -1,0 +1,83 @@
+/* src/components/Layout.css */
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 64px;
+    background: white;
+    border-bottom: 1px solid #E2E8F0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-left h1 {
+    font-size: 20px;
+    color: #1E293B;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-right span {
+    font-size: 14px;
+    color: #475569;
+}
+
+.logout-btn {
+    padding: 6px 16px;
+    background: #EF4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.logout-btn:hover {
+    background: #DC2626;
+}
+
+.layout-body {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 200px;
+    background: white;
+    border-right: 1px solid #E2E8F0;
+    padding: 16px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #475569;
+    transition: background 0.2s;
+}
+.sidebar li:hover {
+    background: #F1F5F9;
+    color: #1E293B;
+}
+
+.main-content {
+    flex: 1;
+    padding: 24px;
+    background: #F8FAFC;
+}
